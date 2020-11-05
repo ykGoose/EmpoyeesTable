@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960A05722552C544002CA9B7 /* EmployeeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A05712552C544002CA9B7 /* EmployeeInfoViewController.swift */; };
+		960A05752552D1F6002CA9B7 /* EmployeesFullInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960A05742552D1F6002CA9B7 /* EmployeesFullInfoViewController.swift */; };
+		9615D06C2553A34100FF14D1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9615D06B2553A34100FF14D1 /* DataManager.swift */; };
 		962C58392552999900691EFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962C58382552999900691EFE /* AppDelegate.swift */; };
 		962C583B2552999900691EFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962C583A2552999900691EFE /* SceneDelegate.swift */; };
-		962C583D2552999900691EFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962C583C2552999900691EFE /* ViewController.swift */; };
 		962C58402552999900691EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962C583E2552999900691EFE /* Main.storyboard */; };
 		962C58422552999B00691EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 962C58412552999B00691EFE /* Assets.xcassets */; };
 		962C58452552999B00691EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962C58432552999B00691EFE /* LaunchScreen.storyboard */; };
+		962C585A25529BFB00691EFE /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962C585925529BFB00691EFE /* Employee.swift */; };
+		962C585F2552B77700691EFE /* EmployeeListViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962C585E2552B77700691EFE /* EmployeeListViewControllerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		960A05712552C544002CA9B7 /* EmployeeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoViewController.swift; sourceTree = "<group>"; };
+		960A05742552D1F6002CA9B7 /* EmployeesFullInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesFullInfoViewController.swift; sourceTree = "<group>"; };
+		9615D06B2553A34100FF14D1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		962C58352552999900691EFE /* EmpoyeesTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmpoyeesTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		962C58382552999900691EFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		962C583A2552999900691EFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		962C583C2552999900691EFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		962C583F2552999900691EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		962C58412552999B00691EFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		962C58442552999B00691EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		962C58462552999B00691EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		962C585925529BFB00691EFE /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		962C585E2552B77700691EFE /* EmployeeListViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewControllerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		962C58372552999900691EFE /* EmpoyeesTable */ = {
 			isa = PBXGroup;
 			children = (
-				962C58382552999900691EFE /* AppDelegate.swift */,
-				962C583A2552999900691EFE /* SceneDelegate.swift */,
-				962C583C2552999900691EFE /* ViewController.swift */,
-				962C583E2552999900691EFE /* Main.storyboard */,
-				962C58412552999B00691EFE /* Assets.xcassets */,
-				962C58432552999B00691EFE /* LaunchScreen.storyboard */,
-				962C58462552999B00691EFE /* Info.plist */,
+				962C585725529B6500691EFE /* Models */,
+				962C584D255299BD00691EFE /* Supporting Files */,
+				962C5852255299DC00691EFE /* ViewControlles */,
+				962C5854255299EB00691EFE /* Storyboards */,
+				962C5855255299FF00691EFE /* Resources */,
 			);
 			path = EmpoyeesTable;
+			sourceTree = "<group>";
+		};
+		962C584D255299BD00691EFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				962C58382552999900691EFE /* AppDelegate.swift */,
+				962C583A2552999900691EFE /* SceneDelegate.swift */,
+				962C58462552999B00691EFE /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		962C5852255299DC00691EFE /* ViewControlles */ = {
+			isa = PBXGroup;
+			children = (
+				962C585E2552B77700691EFE /* EmployeeListViewControllerTableViewController.swift */,
+				960A05712552C544002CA9B7 /* EmployeeInfoViewController.swift */,
+				960A05742552D1F6002CA9B7 /* EmployeesFullInfoViewController.swift */,
+			);
+			path = ViewControlles;
+			sourceTree = "<group>";
+		};
+		962C5854255299EB00691EFE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				962C583E2552999900691EFE /* Main.storyboard */,
+				962C58432552999B00691EFE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		962C5855255299FF00691EFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				962C58412552999B00691EFE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		962C585725529B6500691EFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				962C585925529BFB00691EFE /* Employee.swift */,
+				9615D06B2553A34100FF14D1 /* DataManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962C583D2552999900691EFE /* ViewController.swift in Sources */,
+				962C585F2552B77700691EFE /* EmployeeListViewControllerTableViewController.swift in Sources */,
+				962C585A25529BFB00691EFE /* Employee.swift in Sources */,
+				960A05722552C544002CA9B7 /* EmployeeInfoViewController.swift in Sources */,
+				9615D06C2553A34100FF14D1 /* DataManager.swift in Sources */,
 				962C58392552999900691EFE /* AppDelegate.swift in Sources */,
 				962C583B2552999900691EFE /* SceneDelegate.swift in Sources */,
+				960A05752552D1F6002CA9B7 /* EmployeesFullInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3B53AU5N2F;
-				INFOPLIST_FILE = EmpoyeesTable/Info.plist;
+				INFOPLIST_FILE = "EmpoyeesTable/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.EmpoyeesTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3B53AU5N2F;
-				INFOPLIST_FILE = EmpoyeesTable/Info.plist;
+				INFOPLIST_FILE = "EmpoyeesTable/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.EmpoyeesTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
