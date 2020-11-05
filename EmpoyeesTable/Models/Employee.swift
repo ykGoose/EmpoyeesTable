@@ -1,5 +1,5 @@
 
-struct Employee: Equatable, Comparable {
+struct Employee: Comparable {
     let name: String
     let surname: String
     let email: String
@@ -8,11 +8,7 @@ struct Employee: Equatable, Comparable {
     var fullName: String {
         "\(name) \(surname)"
     }
-    
-    static func ==(lhs: Employee, rhs: Employee) -> Bool {
-        lhs.fullName == rhs.fullName
-    }
-    
+
     static func <(lhs: Employee, rhs: Employee) -> Bool {
         lhs.surname < rhs.surname
     }
